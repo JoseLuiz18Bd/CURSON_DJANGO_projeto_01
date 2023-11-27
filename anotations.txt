@@ -1,0 +1,37 @@
+CRIAR AMBIENTE VIRTUAL
+	python3 -m venv venv
+
+ATIVAR AMBIENTE VIRTUAL
+		'caminho'
+	source venv/bin/activate
+
+CRIAR REPOSITÓRIO GITHUB
+	iniciar e nomear um novo repositório na pagina do GITHUB
+		reservar as informações da chave SSH
+	
+	NO TERMINAL DO PROJETO
+		git config --global user.name "Jose Luiz" 
+		git config --global user.email "zeluizjsantos@gmail.com"
+
+		INICIANDO UMA BRANCH 
+			git config --global ini.defaultBranch main
+		
+		INICIAR UM REPOSITÓRIO VAZIO NA PASTA DO PROJETO
+			git init
+
+	CRIAR CHAVES SSH
+		ssh-keygen
+		copiar o caminho da chave publica e da um "cat /home/joseluiz/.ssh/id_rsa.pub" no TERMINAL
+		copiar tudo que foi gerado voltar no seu perfil do github / settings / SSH and GPG keys / new ssh key e colar o que foi gerado / add SSH key
+
+		voltar para as informações da chave reservada do inicio e copiar a SSH keyy
+		
+		no terminal do PROJETO
+			git remote add origin "chave que foi copiada anteriormente"
+
+		PARA CONFEERIR
+			git remote -v
+
+
+
+
